@@ -7,8 +7,7 @@ from prophet_model import predict_next_period
 
 
 # API Configuration
-api_key = "AIzaSyBcAm4Hqrc_bFzPcukTR4defdLE2TwQKL8"
-genai.configure(api_key=api_key)
+genai.configure(api_key=os.environ["Google_API_KEY"])
 
 # Streamlit UI setup
 st.set_page_config(page_title="Sakhi", page_icon="💖")
